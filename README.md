@@ -82,7 +82,7 @@ SELECT * FROM karyawan
 WHERE gaji > 7000000;
 ```
 
-1. Menampilkan `nama` dan `departemen` untuk karyawan bernama 'Bengs'.
+3. Menampilkan `nama` dan `departemen` untuk karyawan bernama 'Bengs'.
 
 ```Sql
 SELECT nama, departemen
