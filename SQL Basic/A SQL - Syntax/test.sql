@@ -28,3 +28,18 @@ ORDER BY harga DESC;
 INSERT INTO produk (id_produk, nama_produk, kategori, harga, stok)
 VALUES (505, 'Kursi', 'Furniture', 500.000, 10);
 
+--Menambahkan produk baru dengan nama 'Kursi', kategori 'Furnitur', harga 500.000, stok 10 dan id 505.
+INSERT INTO produk (id_produk, nama_produk, kategori, harga, stok)
+VALUES (505, 'Kursi', 'Furniture', 500.000, 10);
+
+--Merubah `stok` menjadi 15 untuk produk yang memiliki `id_produk` 102.
+SET stok = 10
+WHERE id_produk = 505;
+
+--Menampilkan semua kolom dari tabel `produk` yang memiliki `harga` kurang dari 1.000.000.
+SELECT * FROM produk
+WHERE harga < 1000000;
+
+--Menghapus data produk yang bernama 'Meja'.
+DELETE FROM produk
+WHERE nama_produk = 'Meja';

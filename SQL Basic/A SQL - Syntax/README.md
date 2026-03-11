@@ -81,6 +81,20 @@ VALUES (505, 'Kursi', 'Furniture', 500.000, 10);
 2. Merubah `stok` menjadi 15 untuk produk yang memiliki `id_produk` 102.
 
 ```Sql
-
+SET stok = 10
+WHERE id_produk = 505;
 ```
 
+3. Menampilkan semua kolom dari tabel `produk` yang memiliki `harga` kurang dari 1.000.000.
+
+```Sql
+SELECT * FROM produk
+WHERE harga < 1000000;
+```
+
+4. Menghapus data produk yang bernama 'Meja'.
+
+```Sql
+DELETE FROM produk
+WHERE nama_produk = 'Meja';
+```
