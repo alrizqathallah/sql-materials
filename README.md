@@ -1,29 +1,54 @@
-# SQL Materials
+# Pengantar SQL
 
-## Pengantar SQL
+## Apa itu SQL?
 
-### Apa itu SQL?
+SQL merupakan singkatan dari (*Structured Query Language*), adalah bahasa pemrograman yang digunakan untuk engelola data dalam *Relational Database Management System* atau *RDBMS*.
 
-SQL merupakan singkatan dari *Structured Query Language*, merupakan bahasa yang digunakan untuk mengelola basis data relasional (*RDBMS*).
+Data yang disimpan dalam RDBMS menggunakn tabel, mirip seperti spreadsheet yang terdiri dari baris dan kolom.
 
-SQL dapat digunakan untuk berbagai sistem RDBMS serprti *MySQL*, *PostgreSQL*, *Oracle*, *SQL Server* dan sistem RDMS lainnya.
+### Kategori Perintah SQL
 
-### Sejarah Singkat SQL
-
-Pertama kali dikenal dengan nama *SEQUEL* yang dikembangkan pada 1970 oleh **IBM**.
-
-Dikemudian hari dijadikan sebagai standar *ANSI* dan *ISO*.
-
-Terdapat perbedaan sintaks antar sistem basis data, namun dasar yang digunakan tetap sama.
-
-## Jenis Perintah SQL
-
-SQL memiliki beberapa jenis perintah
-
-- **DDL** (*Data Definition Language*) = Digunakan untuk mendefinisikan struktur dari database.
+- **DDL** (*Data Definition Language*), digunakan untuk membuat struktur Database
   <br>
-  contoh: `CREATE`, `ALTER`, `DROP`, `TRUNCATE`.
+  Contoh: `CREATE` atau `DROP`.
 
-- **DML** (*Data Manipulation Language*) = Digunakan untuk memanipulasi data.
+- **DML** (*Data Manipulation Language*), digunakan untuk memanipulasi data.
   <br>
-  contoh: `INSERT`, `UPDATE`, `DELETE`.
+  Contoh: `INSERT`, `UPDATE` dan `DELETE`.
+
+- **DQL** (*Data Query Language*), digunakan untuk mengambil data.
+  <br>
+  Contoh: `SELECT` yang paling sering digunakan.
+
+<br>
+
+## Struktur Dasar Perintah SQL
+
+Struktur dasar perintah SQL, hampir semua menggunakan bentuk yang sama yaitu **S-F-W**.
+
+- `SELECT`, untuk menentukan kolom mana yang ingin dilihat.
+- `FROM`, untuk menentukan tabel mana tempat data simpan.
+- `WHERE`, opsional untuk melakukan filter data yang diambil.
+
+<br>
+
+## Contoh Penggunaan
+
+Dicontohkan dengan tabel `karyawan`:
+
+| id | nama    | departemen |    gaji   |
+|----|---------| -----------|-----------|
+| 1  | Bengs   |      IT    | 9.000.000 |
+| 2  | Wayan   |      IT    | 8.000.000 |
+| 3  | Ambon   |      HR    | 7.000.000 |
+| 4  | Kacang  |  Marketing | 6.000.000 |
+
+<br>
+
+**Mengambil Semua Data**:
+
+untuk melihat seluruh isi tabel.
+
+```Sql
+SELECT * FROM karyawan;
+```
