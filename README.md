@@ -21,7 +21,9 @@ Terdapat perbedaan sintaks antar sistem basis data, namun dasar yang digunakan t
 SQL memiliki beberapa jenis perintah
 
 - **DDL** (*Data Definition Language*) = Digunakan untuk mendefinisikan struktur dari database.
+  <br>
   contoh: `CREATE`, `ALTER`, `DROP`, `TRUNCATE`.
 
 - **DML** (*Data Manipulation Language*) = Digunakan untuk memanipulasi data.
+  <br>
   contoh: `INSERT`, `UPDATE`, `DELETE`.
